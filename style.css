@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    justify-content: center;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+span{
+    color:  rgb(53, 83, 181);
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -60px;
+}
+
+nav img{
+    width: 300px;
+    height: 300px;
+}
+
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+nav a{
+    color: white;
+    margin-left: 30px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: 3cqh;
+}
+nav ul a:hover{
+    text-decoration:2px underline rgb(53, 83, 181);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: -200px;
+}
+
+.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 100%;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vh;
+    border-radius: 50%;
+    box-sizing: 0 0 25px solid rgb(53, 83, 181);
+    transition: 0.2s linear;
+}
+
+.home-content{
+    margin-left: 40px;
+    width: 500px;
+}
+
+.home-content p{
+    margin-top: -100px;
+}
+
+.btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4rem;
+    background-color: black;
+    color: rgb(53, 83, 181);
+    letter-spacing: 0.3rem;
+    border: 2px solid rgb(53, 83, 181);
+}
+
+.btn:hover{
+    background-color: rgb(53, 83, 181);
+    color: black;
+}
+
+.text{
+    font-size: 34px;
+    font-weight: 600;
+    min-height: 280px;
+}
+
+.text span{
+    position: relative;
+}
+
+.text span::before{
+    content:"Web developer";
+    color: rgb(53, 83, 181); 
+    animation: words 20s infinite;
+}
+
+.text span:after{
+    content: "";
+    background-color: rgb(53, 83, 181);
+    position: absolute;
+    width: calc(100% +8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+main .about{
+    margin-left: -150px;
+}
+
+main img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+main h2{
+    font-size: 3rem;
+}
+
+main h4{
+    font-size: large;
+}
+
+main p{
+    width: 500px;
+    font-size: large;
+}
+
+header{
+    margin-top: 100px;
+    background-image: url(img/blue\ code2.jpg);
+    padding: 30px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+
+.project h4{
+    background-color: blue;
+}
+
+.project-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pro-con{
+    padding: 20px;
+    background-color: white;
+}
+
+.pro-con h5{
+    color: black;
+}
+
+.pro-con p{
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+header img{
+    width: 600px;
+    height: 400px;
+}
+
+header a {
+    color: blue;
+    margin-top: 20px;
+}
+
+header a:hover{
+    text-decoration: 2px underline rgb(53, 83, 181);
+}
+
+aside{
+    margin-top: 40px;
+    text-align: center;
+    background-image: url(img/blue\ code4.jpg);
+    padding: 30px;
+}
+
+aside .aside-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+aside .aside-con{
+    background-color: rgb(53, 83, 181);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+aside .aside-container p{
+    width: 300px;
+}
+
+footer{
+    margin-top: 100px;
+    background-image: url(img/blue\ code3.jpg);
+}
+
+.footer-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    width: 300px;
+    height: 300px;
+}
+
+footer ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline 2px rgb(53, 83, 181);
+}
+
+@keyframes words{
+    0%, 20%{
+        content: 'Web developer';
+    }
+
+    21%, 40%{
+        content: 'Video Editor';
+    }
+
+    41%, 60%{
+        content: 'Web Designer';
+    }
+
+    61%, 80%{
+        content: 'Graphics Designer';
+    }
+
+    81%, 100%{
+        content: 'Youtuber';
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body{
+        width: 100%;    
+    }
+
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    section .home-content h1{
+        margin-left: 20px;
+    }
+
+    section .home-content h3{
+        margin-left: 20px;
+    }
+
+    section .home-content p{
+        width: 340px;
+        margin-left: 20px;
+    }
+
+    section .home-content a{
+        margin-left: 100px;
+    }
+
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .home-content{
+        margin-left: 100px;
+        align-items: center;
+    }
+    
+    .home .home-content h3{
+        font-size: 2.2rem;
+    }
+
+    .home-content h1{
+        font-size: 4rem;
+    }
+
+    .home-content p{
+        width: 400px;
+    }
+
+    .home-img img{
+        width: 70vh;
+        margin-top: 4rem;
+    }
+
+    main p{
+        width: 100%;
+    }
+
+   .project-content{
+    flex-direction: column;
+    margin-top: 20px;
+   }
+
+   header img{
+    width: 100%;
+   }
+
+   .pro-con{
+    margin-top: 40px;
+   }
+
+   aside{
+    margin-top: 100px;
+   }
+
+   .aside-container{
+    flex-direction: column;
+   }
+
+   .aside-container .aside-con{
+    margin-top: 20px;
+   }
+
+   .footer-item{
+    flex-direction: column;
+   }
+}
