@@ -139,6 +139,7 @@ nav ul a:hover{
 main{
     display: flex;
     justify-content: space-around;
+    background-color: rgb(52, 52, 246);
     padding: 40px;
     border-bottom-left-radius: 60px;
     border-top-right-radius: 60px;
@@ -169,8 +170,8 @@ main p{
 
 header{
     margin-top: 100px;
-    background-image: url(img/blue\ code2.jpg);
     padding: 30px;
+    background-image: linear-gradient(to bottom left, blue, black);
     border-bottom-right-radius: 60px;
     border-top-left-radius: 60px;
 }
@@ -217,7 +218,7 @@ header a:hover{
 aside{
     margin-top: 40px;
     text-align: center;
-    background-image: url(img/blue\ code4.jpg);
+    background-image: linear-gradient(to bottom right, rgb(42, 42, 211), black);
     padding: 30px;
 }
 
